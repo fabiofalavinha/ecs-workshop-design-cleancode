@@ -10,7 +10,7 @@ namespace ECS.Workshop.DesignCleanCode.Demo
     {
         static void Main(string[] args)
         {
-
+            //Commit para permissão de push
             Console.WriteLine("Press <ENTER> to exit application");
             Console.ReadKey();
         }
