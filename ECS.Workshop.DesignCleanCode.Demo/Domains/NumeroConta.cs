@@ -4,11 +4,13 @@
     {
         public int Value { get; set; }
 
-        public static int contaInicial = 0;
+        public static int contaInicial = 1;
 
         public NumeroConta ProximoNumeroConta()
         {
-            return new NumeroConta(contaInicial++);
+            Value = contaInicial;
+            contaInicial++;
+            return this;
         }
 
     }
