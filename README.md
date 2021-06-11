@@ -66,3 +66,7 @@ public Comprovante Executar()
 	return new Comprovante(transacaoResultadoContaADebito, transacaoResultadoContaBDebito);
 }
 ```
+
+
+![parte1](https://user-images.githubusercontent.com/886718/121611771-61527680-ca2f-11eb-93d7-cdceb85d4d34.png)
+![parte1](https://user-images.githubusercontent.com/886718/121611775-644d6700-ca2f-11eb-8402-4544a8fde0b1.png)
