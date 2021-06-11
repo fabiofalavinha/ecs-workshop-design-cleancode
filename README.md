@@ -69,4 +69,5 @@ public Comprovante Executar()
 
 
 ![parte1](https://user-images.githubusercontent.com/886718/121611771-61527680-ca2f-11eb-93d7-cdceb85d4d34.png)
-![parte1](https://user-images.githubusercontent.com/886718/121611775-644d6700-ca2f-11eb-8402-4544a8fde0b1.png)
+![parte2](https://user-images.githubusercontent.com/886718/121611919-c1e1b380-ca2f-11eb-836d-fff27554ccd4.png)
+
