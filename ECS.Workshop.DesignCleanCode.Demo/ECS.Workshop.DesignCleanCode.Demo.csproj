@@ -43,14 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Recibo.cs" />
+    <Compile Include="Dominio\Agencia.cs" />
+    <Compile Include="Dominio\TaxaAdministrativa.cs" />
+    <Compile Include="Dominio\Transacao\PagarBoleto.cs" />
+    <Compile Include="Dominio\Transacao\Transferencia.cs" />
+    <Compile Include="Dominio\Transacao\Depositar.cs" />
+    <Compile Include="Dominio\Transacao\Operacao.cs" />
+    <Compile Include="Dominio\PessoaFisica.cs" />
+    <Compile Include="Dominio\PessoaJuridica.cs" />
+    <Compile Include="Dominio\Cliente.cs" />
+    <Compile Include="Dominio\Conta\Conta.cs" />
+    <Compile Include="Dominio\Banco.cs" />
+    <Compile Include="Dominio\Conta\ContaCorrente.cs" />
+    <Compile Include="Dominio\Conta\ContaEspecial.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domains\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

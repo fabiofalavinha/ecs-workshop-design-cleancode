@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ECS.Workshop.DesignCleanCode.Demo.Dominio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,12 @@ namespace ECS.Workshop.DesignCleanCode.Demo
     {
         static void Main(string[] args)
         {
-            //Commit para permissão de push
+            var banco = new Banco();
+            var pessoa = new PessoaFisica()
+            {
+                Nome = "Joao"
+            };
+
             Console.WriteLine("Press <ENTER> to exit application");
             Console.ReadKey();
         }
