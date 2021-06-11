@@ -43,14 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domains\ClientePessoaFisica.cs" />
+    <Compile Include="Domains\ClientePessoaJuridica.cs" />
+    <Compile Include="Domains\ContaCorrente.cs" />
+    <Compile Include="Domains\ContaEspecial.cs" />
+    <Compile Include="Domains\Cpf.cs" />
+    <Compile Include="Domains\Cpnj.cs" />
+    <Compile Include="Domains\DepositoInicial.cs" />
+    <Compile Include="Domains\ICliente.cs" />
+    <Compile Include="Domains\IConta.cs" />
+    <Compile Include="Domains\ITransacaoFinanceira.cs" />
+    <Compile Include="Domains\NumeroConta.cs" />
+    <Compile Include="Domains\Taxa.cs" />
+    <Compile Include="Domains\TransacaoFinanceira.cs" />
+    <Compile Include="Exceptions\ContaException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domains\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
