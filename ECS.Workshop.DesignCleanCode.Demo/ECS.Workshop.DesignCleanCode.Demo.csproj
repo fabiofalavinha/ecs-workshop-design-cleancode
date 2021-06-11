@@ -43,14 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Account.cs" />
+    <Compile Include="Domain\AccountNumber.cs" />
+    <Compile Include="Domain\Agency.cs" />
+    <Compile Include="Domain\Bank.cs" />
+    <Compile Include="Domain\Client.cs" />
+    <Compile Include="Domain\SpecialAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domains\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
