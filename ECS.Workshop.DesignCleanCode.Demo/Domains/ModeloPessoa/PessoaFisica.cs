@@ -1,13 +1,18 @@
 ﻿namespace ECS.Workshop.DesignCleanCode.Demo.Domains.ModeloPessoa
 {
-    public class PessoaFisica
+    public class PessoaFisica : ICliente
     {
-        public Pessoa Pessoa { get; set; }
-        public CPF CPF { get; set; }
+        public Nome Nome { get; }
+        public CPF CPF { get; }
 
-        public PessoaFisica(Nome nome, CPF Cpf)
+        public static PessoaFisica ApartirDe(Nome nome, CPF cpf)
         {
-            Pessoa = Pessoa.PorNome(nome);
+            return new PessoaFisica(nome, cpf);
+        }
+
+        private PessoaFisica(Nome nome, CPF Cpf)
+        {
+            Nome = nome;
             CPF = Cpf;
         }
     }

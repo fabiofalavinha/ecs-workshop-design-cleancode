@@ -1,4 +1,6 @@
-﻿namespace ECS.Workshop.DesignCleanCode.Demo.Domains.ModeloConta
+﻿using System;
+
+namespace ECS.Workshop.DesignCleanCode.Demo.Domains.ModeloConta
 {
     public sealed class NumeroConta
     {
@@ -7,11 +9,11 @@
             return new NumeroConta();
         }
 
-        public int Valor { get; private set; }
+        public Guid Valor { get; private set; }
 
         private NumeroConta()
         {
-           //gerar
+            Valor = Guid.NewGuid();
         }
     }
 }

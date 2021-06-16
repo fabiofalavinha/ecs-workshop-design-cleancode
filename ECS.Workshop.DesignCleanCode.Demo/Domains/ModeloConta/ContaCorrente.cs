@@ -1,15 +1,13 @@
 ﻿
+using ECS.Workshop.DesignCleanCode.Demo.Domains.ModeloPessoa;
+
 namespace ECS.Workshop.DesignCleanCode.Demo.Domains.ModeloConta
 {
     public class ContaCorrente : Conta
     {
-        //Pessoa
-        //Taxa
-
-        public ContaCorrente() : base(Taxa.PorDecimal(0.05M))
+        public ContaCorrente(ICliente cliente, Saldo saldo) : base(Taxa.PorDecimal(0.05M), new ICliente[] { cliente }, saldo)
         {
 
         }
-        
     }
 }

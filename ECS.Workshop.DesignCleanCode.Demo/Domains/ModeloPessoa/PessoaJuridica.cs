@@ -1,13 +1,13 @@
 ﻿namespace ECS.Workshop.DesignCleanCode.Demo.Domains.ModeloPessoa
 {
-    public class PessoaJuridica
+    public class PessoaJuridica : ICliente
     {
-        public Pessoa Pessoa { get; set; }
-        public CNPJ CNPJ { get; set; }
+        public Nome Nome { get; }
+        public CNPJ CNPJ { get; private set; }
 
         public PessoaJuridica(Nome nome, CNPJ Cnpj)
         {
-            Pessoa = Pessoa.PorNome(nome);
+            Nome = nome;
             CNPJ = Cnpj;
         }
     }
