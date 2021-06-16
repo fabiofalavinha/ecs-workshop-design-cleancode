@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECS.Workshop.DesignCleanCode.Demo", "ECS.Workshop.DesignCleanCode.Demo\ECS.Workshop.DesignCleanCode.Demo.csproj", "{4BC3EE86-76BF-498F-AB25-64D48EE6B0C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECS.Workshop.DesignCleanCode.Repository", "ECS.Workshop.DesignCleanCode.Repository\ECS.Workshop.DesignCleanCode.Repository.csproj", "{4DDC4236-D693-4A12-BD11-29FF7A2D8A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECS.Workshop.DesignCleanCode.Dominio", "ECS.Workshop.DesignCleanCode.Dominio\ECS.Workshop.DesignCleanCode.Dominio.csproj", "{5E4D686A-2636-4942-9D09-4C1BE23EB56A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4BC3EE86-76BF-498F-AB25-64D48EE6B0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BC3EE86-76BF-498F-AB25-64D48EE6B0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BC3EE86-76BF-498F-AB25-64D48EE6B0C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDC4236-D693-4A12-BD11-29FF7A2D8A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDC4236-D693-4A12-BD11-29FF7A2D8A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDC4236-D693-4A12-BD11-29FF7A2D8A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDC4236-D693-4A12-BD11-29FF7A2D8A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4D686A-2636-4942-9D09-4C1BE23EB56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4D686A-2636-4942-9D09-4C1BE23EB56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4D686A-2636-4942-9D09-4C1BE23EB56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4D686A-2636-4942-9D09-4C1BE23EB56A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4BC3EE86-76BF-498F-AB25-64D48EE6B0C5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ECS.Workshop.DesignCleanCode.Demo</RootNamespace>
-    <AssemblyName>ECS.Workshop.DesignCleanCode.Demo</AssemblyName>
+    <ProjectGuid>{5E4D686A-2636-4942-9D09-4C1BE23EB56A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECS.Workshop.DesignCleanCode.Dominio</RootNamespace>
+    <AssemblyName>ECS.Workshop.DesignCleanCode.Dominio</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -35,7 +33,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,17 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Agencia.cs" />
+    <Compile Include="Banco.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Conta\Conta.cs" />
+    <Compile Include="Conta\ContaCorrente.cs" />
+    <Compile Include="Conta\ContaEspecial.cs" />
+    <Compile Include="Contratos\IEntidadePadrao.cs" />
+    <Compile Include="PessoaFisica.cs" />
+    <Compile Include="PessoaJuridica.cs" />
+    <Compile Include="Recibo.cs" />
+    <Compile Include="TaxaAdministrativa.cs" />
+    <Compile Include="Transacao\Depositar.cs" />
+    <Compile Include="Transacao\Operacao.cs" />
+    <Compile Include="Transacao\PagarBoleto.cs" />
+    <Compile Include="Transacao\Transferencia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ECS.Workshop.DesignCleanCode.Dominio\ECS.Workshop.DesignCleanCode.Dominio.csproj">
-      <Project>{5e4d686a-2636-4942-9d09-4c1be23eb56a}</Project>
-      <Name>ECS.Workshop.DesignCleanCode.Dominio</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

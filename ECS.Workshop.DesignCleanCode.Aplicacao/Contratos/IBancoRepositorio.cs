@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECS.Workshop.DesignCleanCode.Demo.Dominio
+namespace ECS.Workshop.DesignCleanCode.Aplicacao.Contratos
 {
-    public class Recibo
+    public interface IBancoRepositorio
     {
-        
     }
 }

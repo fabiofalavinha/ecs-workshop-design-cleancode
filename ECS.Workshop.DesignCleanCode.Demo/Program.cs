@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ECS.Workshop.DesignCleanCode.Demo
 {
@@ -16,6 +17,10 @@ namespace ECS.Workshop.DesignCleanCode.Demo
             {
                 Nome = "Joao"
             };
+
+            //IBancoRepositorio banco = new BancoRepositorio()
+
+            var result = MessageBox.Show("O banco não existe");
 
             Console.WriteLine("Press <ENTER> to exit application");
             Console.ReadKey();
